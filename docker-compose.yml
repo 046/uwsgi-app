@@ -1,0 +1,10 @@
+version: "3"
+services:
+
+  uwsgi:
+    build: ./app
+    ports:
+      - "8080:8080"
+    environment:
+      TZ: "Asia/Tokyo"
+    container_name: uwsgi
